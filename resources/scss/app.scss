@@ -3,9 +3,14 @@
 .gallery {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 
     .card-immagine {
         flex-basis: calc((100% / 12) - 20px);
+        text-align: center;
+        .img {
+            width: 100%;
+        }
     }
 }
 
