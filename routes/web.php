@@ -216,8 +216,10 @@ Route::get('/', function (
                 "Joëlle Jones"
             ],
         ],
-    ]  
+    ],
+    $headli = ['characters','comics','movies','tv','games', 'collectibles', 'videos', 'fan', 'news','shop'],
+    $socials = ['resources/imgs/footer-facebook.png', 'resources/imgs/footer-periscope.png', 'resources\imgs\footer-pinterest.png', 'resources\imgs\footer-twitter.png', 'resources\imgs\footer-youtube.png' ]
 ) {
-    return view('pages.index', compact("comics"));
+    return view('pages.index', compact("comics", "headli", "socials"));
     return view('pages.index');
 });

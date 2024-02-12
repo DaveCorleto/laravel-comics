@@ -1,6 +1,6 @@
 
 <main>
-    <h1>Hello from Main</h1>
+
     <div class="gallery">
     @foreach ($comics as $comic)
     

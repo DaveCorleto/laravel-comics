@@ -1,9 +1,27 @@
 <footer>
-    <h1>Hello from footerrrr</h1>
+    <div class="sign-up">
+        SIGN-UP NOW!
+    </div>
+    <div>
+        <img src="Vite:asset(resources/imgs/footer-pinterest.png)">
+    </div>
+    <ul>
+        <li class="blue">FOLLOW US</li>
+        @foreach ($socials as $social)
+        <li><img src={{$social}}></li>
+        @endforeach
+    </ul>
+
 </footer>
 
+<!-- Prova scss per vedere se supporta anche la modifica nel componente  -->
 <style lang=scss>
-    h1 {
+    .sign-up {
+        padding: 10px;
+        border: 1px solid blue;
+        color: white;
+    }
+    .blue {
         color:blue;
     }
 </style>

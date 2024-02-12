@@ -9,11 +9,12 @@
 
     @yield('head')
 </head>
-<body>
+<body class="roboto-black">
     <div class="text-center">
         @include('components.header')
         @include('components.main')
         @yield('content')
+        @include('components.middle')
         @include('components.footer')
     </div>
 </body>

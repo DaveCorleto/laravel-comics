@@ -1,17 +1,77 @@
 @import "~bootstrap/scss/bootstrap";
 
+
+body {
+    margin:auto;
+}
+.roboto-black {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+// Sezione Main con le card 
+main {
+    box-sizing: border-box;
+    margin: auto;
+}  
 .gallery {
+    width: 80%;
+    box-sizing: border-box;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin: auto;
 
     .card-immagine {
-        flex-basis: calc((100% / 12) - 20px);
+        flex-basis: calc((100% / 6) - 10px) ;
         text-align: center;
+
         .img {
-            width: 100%;
+            max-width: 100%;
         }
     }
 }
+header {
+    margin-bottom: 100px;
+}
+nav {
+    width: 75%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-
+    .logo {
+        flex-basis: 15%;
+        padding-right: 20%;
+    }
+    .list {
+        flex-basis: 70%;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+        li {
+            padding: 10px;
+        }
+        
+    }
+    .searchbar {
+        flex-basis: 15%;
+        align-items: center;
+    }
+}
+.jumbotron {
+    height: 400px;
+    background-image: url(/resources/imgs/jumbotron.jpg);
+}
+footer {
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    background-color: rgb(15, 13, 13);
+}
