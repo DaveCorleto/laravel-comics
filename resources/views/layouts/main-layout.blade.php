@@ -11,7 +11,6 @@
 </head>
 <body>
     <div class="text-center">
-        @include('components.db')
         @include('components.header')
         @include('components.main')
         @yield('content')

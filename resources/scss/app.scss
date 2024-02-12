@@ -1,3 +1,12 @@
 @import "~bootstrap/scss/bootstrap";
 
+.gallery {
+    display: flex;
+    justify-content: space-between;
+
+    .card-immagine {
+        flex-basis: calc((100% / 12) - 20px);
+    }
+}
+
 
