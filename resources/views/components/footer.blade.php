@@ -1,16 +1,19 @@
 <footer>
-    <div class="sign-up">
-        SIGN-UP NOW!
+    <div class="footer-bottom">
+        <div class="sign-up">
+            SIGN-UP NOW!
+        </div>
+        <div>
+            <img src="Vite:asset(resources/imgs/footer-pinterest.png)">
+        </div>
+        <ul>
+            <li class="blue">FOLLOW US</li>
+            @foreach ($socials as $social)
+            <li><img src=('')></li>
+            @endforeach
+        </ul>
     </div>
-    <div>
-        <img src="Vite:asset(resources/imgs/footer-pinterest.png)">
-    </div>
-    <ul>
-        <li class="blue">FOLLOW US</li>
-        @foreach ($socials as $social)
-        <li><img src={{$social}}></li>
-        @endforeach
-    </ul>
+
 
 </footer>
 
